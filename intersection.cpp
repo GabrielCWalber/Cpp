@@ -1,3 +1,17 @@
+/*
+  Sorted Vector Intersection Tool
+  
+  Finds the intersection of two sorted string vectors in O(n + m) time.
+  
+  Personal utility for quickly finding common elements between lists.
+  Can chain multiple intersections by using output as input for next comparison.
+  
+  Features:
+  - Two-pointer merge algorithm for efficiency
+  - Optional sorting or pre-sort validation
+  - Clean set notation output
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -61,4 +75,5 @@ int main() {
     cout << "\"}\n\n";
 
     return 0;
+
 }
