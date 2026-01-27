@@ -1,3 +1,19 @@
+/*
+  Triominoes Tiling Problem
+  
+  Given a 2^k × 2^k board with one square removed, tile the remaining squares 
+  using L-shaped triominoes (3-square pieces) so that no pieces overlap.
+  
+  Uses divide-and-conquer: recursively divides the board into quadrants, places
+  one triomino at the center to cover 3 of the 4 quadrants (excluding the one
+  with the missing square), then solves each quadrant recursively.
+  
+  Input: board size n (power of 2), coordinates (x,y) of the missing square
+  Output: visual representation where each number represents a unique triomino
+  
+  Time complexity: O(n²)
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -45,4 +61,5 @@ int main() {
     printMatriz(n);
 
     return 0;
+
 }
