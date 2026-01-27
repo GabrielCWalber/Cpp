@@ -1,3 +1,16 @@
+/*
+  Ancient Civilization Game Analysis
+  
+  Given n tiles, each with two numbers, determine if tiles can be divided into 
+  two equal-sum groups. If not possible, find which single tile to remove to 
+  make it possible.
+  
+  Solution uses branch-and-bound with backtracking to solve the subset sum 
+  variant of the knapsack problem. Tests if differences can be split evenly; 
+  if impossible, systematically removes tiles by parity until a valid partition 
+  is found.
+*/
+
 // Analisando Jogos de Civilizações Antigas
 
 #include <bits/stdc++.h>
@@ -126,4 +139,5 @@ int main(){
     entrada.close();
 
     return 0;
+
 }
