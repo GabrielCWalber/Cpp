@@ -1,3 +1,17 @@
+/*
+  Competitive Programming Problem: Largest Binary Palindrome
+  
+  Given a number x, find the largest number ≤ x whose binary representation 
+  is a palindrome.
+  
+  Approach:
+  - First attempt: mirror the left half of x's bits to the right half
+  - If result > x: reduce to the previous binary palindrome by decrementing
+    the middle section and mirroring again
+  
+  Time complexity: O(log x)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -45,4 +59,5 @@ main() {
 
     cout << y << '\n';
     return 0;
+
 }
