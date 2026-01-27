@@ -1,3 +1,17 @@
+/*
+  Topological Sort - Course Prerequisites
+  
+  Implements Kahn's algorithm to find a valid ordering of university courses
+  based on prerequisite dependencies (represented as a directed acyclic graph).
+  
+  Uses in-degree tracking and BFS-style processing to determine which courses
+  can be taken at each step. Detects cycles if prerequisites are impossible.
+  
+  Final assignment for Advanced Data Structures course.
+  
+  Time complexity: O(V + E)
+*/
+
 #include <iostream>
 #include <vector>
 
@@ -100,4 +114,5 @@ int main() {
     deleteNodes(graph);
 
     return 0;
+
 }
