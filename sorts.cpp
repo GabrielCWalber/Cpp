@@ -1,3 +1,17 @@
+/*
+  Sorting Algorithms Benchmark
+  
+  Compares performance of 10 sorting algorithms (Bubble, Insertion, Selection, 
+  Heap, Shell, Merge, Quick, Counting, Bucket, STL sort) across 4 scenarios:
+  sorted, reverse-sorted, random, and random with duplicates.
+  
+  Tests array sizes from 128 to 65K elements, runs 10 iterations per test,
+  and calculates average execution time excluding outliers.
+  
+  Extended from class assignment by adding Counting Sort, Bucket Sort, and 
+  STL comparison for comprehensive performance analysis.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 using namespace std::chrono;
@@ -464,4 +478,5 @@ int main() {
         }
     }
     return 0;
+
 }
