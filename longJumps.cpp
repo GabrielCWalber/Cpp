@@ -1,3 +1,16 @@
+/*
+  Competitive Programming Problem: Long Jumps
+  Given a linear board where each tile contains a positive integer, find the maximum 
+  possible score using these rules:
+  - Choose any starting tile
+  - Add the current tile's value to your score
+  - Move forward exactly that many tiles
+  - Repeat until you move off the board
+  - Find the maximum possible score across all starting positions
+  
+  Solution: Dynamic programming with backwards traversal - O(n) time
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -27,4 +40,5 @@ int main(){
         solve();
     }
     return 0;
+
 }
